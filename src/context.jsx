@@ -1,4 +1,4 @@
-import { useState, createContext, useContext } from "react";
+import { useState, createContext, useContext } from 'react';
 
 const AppContext = createContext();
 
@@ -31,8 +31,7 @@ const AppProvider = ({ children }) => {
         closeSidebar,
         openModal,
         closeModal,
-      }}
-    >
+      }}>
       {children}
     </AppContext.Provider>
   );

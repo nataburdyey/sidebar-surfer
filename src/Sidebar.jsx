@@ -1,19 +1,19 @@
-import logo from "./logo.png";
-import { social, links } from "./data";
-import { FaTimes } from "react-icons/fa";
-import { useGlobalContext } from "./context";
+import logo from './logo.png';
+import { social, links } from './data';
+import { FaTimes } from 'react-icons/fa';
+import { useGlobalContext } from './context';
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
   return (
-    <aside className={isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}>
-      <div className="sidebar-header">
-        <img src={logo} alt="Sidebar Surfer App" className="logo" />
-        <button className="close-btn" onClick={closeSidebar}>
+    <aside className={isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}>
+      <div className='sidebar-header'>
+        <img src={logo} alt='Sidebar Surfer App' className='logo' />
+        <button className='close-btn' onClick={closeSidebar}>
           <FaTimes />
-        </button>{" "}
+        </button>{' '}
       </div>
-      <ul className="links">
+      <ul className='links'>
         {links.map((link) => {
           const { id, url, text, icon } = link;
           return (
@@ -26,7 +26,7 @@ const Sidebar = () => {
           );
         })}
       </ul>
-      <ul className="social-links">
+      <ul className='social-links'>
         {social.map((link) => {
           const { id, url, icon } = link;
           return (
