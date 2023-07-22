@@ -12,7 +12,7 @@ The Sidebar and Modal project is a responsive web application that incorporates 
 
 
 ### Explore The Website
-[SidebarSurfer on Netlify](https://slide-ease.netlify.app/)
+[SidebarSurfer on Netlify](https://sidebar-surfer.netlify.app/)
 
 ### Preview
 
